@@ -83,6 +83,8 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSSiriUsageDescription</key>
+	<string>To take input and quick searh details</string>
 	<key>PlatformIconsCommit</key>
 	<string>not set</string>
 	<key>TypesCommit</key>

@@ -243,7 +243,33 @@
 		43FD2F0219BB8D87007E594D /* DHWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43FD2F0119BB8D87007E594D /* DHWebViewController.m */; };
 		43FD2F0419BB8D87007E594D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43FD2F0319BB8D87007E594D /* Images.xcassets */; };
 		45D28F8ABD1FC392B1930467 /* libPods-Dash.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2364AD2032B0714BCD2265 /* libPods-Dash.a */; };
+		AE2022F41FC2DFE100EE61A7 /* IntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2022F31FC2DFE100EE61A7 /* IntentHandler.m */; };
+		AE2022F81FC2DFE100EE61A7 /* Intents Handler.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AE2022F01FC2DFE100EE61A7 /* Intents Handler.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE2022F61FC2DFE100EE61A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43FD2EDA19BB8D87007E594D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE2022EF1FC2DFE100EE61A7;
+			remoteInfo = "Intents Handler";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AE2022FC1FC2DFE100EE61A7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AE2022F81FC2DFE100EE61A7 /* Intents Handler.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		26480C2A1E2E9ABB00E3145E /* docset_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = docset_icon.png; sourceTree = "<group>"; };
@@ -451,6 +477,11 @@
 		7E45E2662CBB7671D0D844A3 /* Pods-Dash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dash.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Dash/Pods-Dash.release.xcconfig"; sourceTree = "<group>"; };
 		9A2364AD2032B0714BCD2265 /* libPods-Dash.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Dash.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FB91D369AD27465BED375AD /* libPods-Dash-Dash App Store.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Dash-Dash App Store.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE2022EB1FC2D8F000EE61A7 /* Dash.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Dash.entitlements; sourceTree = "<group>"; };
+		AE2022F01FC2DFE100EE61A7 /* Intents Handler.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Intents Handler.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE2022F21FC2DFE100EE61A7 /* IntentHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntentHandler.h; sourceTree = "<group>"; };
+		AE2022F31FC2DFE100EE61A7 /* IntentHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntentHandler.m; sourceTree = "<group>"; };
+		AE2022F51FC2DFE100EE61A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAE47FF5DEE33300EBFF9AEA /* Pods-Dash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dash.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Dash/Pods-Dash.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -486,6 +517,13 @@
 				43FD2EEA19BB8D87007E594D /* UIKit.framework in Frameworks */,
 				43FD2EE619BB8D87007E594D /* Foundation.framework in Frameworks */,
 				45D28F8ABD1FC392B1930467 /* libPods-Dash.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE2022ED1FC2DFE100EE61A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -906,6 +944,7 @@
 			isa = PBXGroup;
 			children = (
 				43FD2EEB19BB8D87007E594D /* Dash */,
+				AE2022F11FC2DFE100EE61A7 /* Intents Handler */,
 				43FD2EE419BB8D87007E594D /* Frameworks */,
 				43FD2EE319BB8D87007E594D /* Products */,
 				578166A9FCC162CE3E4A4980 /* Pods */,
@@ -917,6 +956,7 @@
 			children = (
 				43FD2EE219BB8D87007E594D /* Dash.app */,
 				43AB65B21ED19D2F00A6EC18 /* Dash.app */,
+				AE2022F01FC2DFE100EE61A7 /* Intents Handler.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -941,6 +981,7 @@
 		43FD2EEB19BB8D87007E594D /* Dash */ = {
 			isa = PBXGroup;
 			children = (
+				AE2022EB1FC2D8F000EE61A7 /* Dash.entitlements */,
 				43F70ABF19CBBD20000849C8 /* Defaults.plist */,
 				43FD2EFA19BB8D87007E594D /* Main.storyboard */,
 				438B06DE19FFA2DF009A539D /* Launch.xib */,
@@ -984,6 +1025,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		AE2022F11FC2DFE100EE61A7 /* Intents Handler */ = {
+			isa = PBXGroup;
+			children = (
+				AE2022F21FC2DFE100EE61A7 /* IntentHandler.h */,
+				AE2022F31FC2DFE100EE61A7 /* IntentHandler.m */,
+				AE2022F51FC2DFE100EE61A7 /* Info.plist */,
+			);
+			path = "Intents Handler";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1019,15 +1070,34 @@
 				43F760BF19EA8C57002BD8A6 /* Git Hashes */,
 				C71793A2EB8A6FB0EA63C3D3 /* [CP] Embed Pods Frameworks */,
 				988D171F13583CC36FBA7412 /* [CP] Copy Pods Resources */,
+				AE2022FC1FC2DFE100EE61A7 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AE2022F71FC2DFE100EE61A7 /* PBXTargetDependency */,
 			);
 			name = Dash;
 			productName = Dash;
 			productReference = 43FD2EE219BB8D87007E594D /* Dash.app */;
 			productType = "com.apple.product-type.application";
+		};
+		AE2022EF1FC2DFE100EE61A7 /* Intents Handler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE2022F91FC2DFE100EE61A7 /* Build configuration list for PBXNativeTarget "Intents Handler" */;
+			buildPhases = (
+				AE2022EC1FC2DFE100EE61A7 /* Sources */,
+				AE2022ED1FC2DFE100EE61A7 /* Frameworks */,
+				AE2022EE1FC2DFE100EE61A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Intents Handler";
+			productName = "Intents Handler";
+			productReference = AE2022F01FC2DFE100EE61A7 /* Intents Handler.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -1043,13 +1113,21 @@
 						DevelopmentTeam = JP58VMK957;
 					};
 					43FD2EE119BB8D87007E594D = {
-						DevelopmentTeam = JP58VMK957;
+						DevelopmentTeam = G43P2FFDRZ;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
 							};
+							com.apple.Siri = {
+								enabled = 1;
+							};
 						};
+					};
+					AE2022EF1FC2DFE100EE61A7 = {
+						CreatedOnToolsVersion = 9.1;
+						DevelopmentTeam = G43P2FFDRZ;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -1068,6 +1146,7 @@
 			targets = (
 				43FD2EE119BB8D87007E594D /* Dash */,
 				43AB65311ED19D2F00A6EC18 /* Dash App Store */,
+				AE2022EF1FC2DFE100EE61A7 /* Intents Handler */,
 			);
 		};
 /* End PBXProject section */
@@ -1147,6 +1226,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AE2022EE1FC2DFE100EE61A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -1205,7 +1291,7 @@
 			inputPaths = (
 				"${SRCROOT}/../Pods/Target Support Files/Pods-Dash-Dash App Store/Pods-Dash-Dash App Store-resources.sh",
 				"${PODS_ROOT}/SAMKeychain/Support/SAMKeychain.bundle",
-				"$PODS_CONFIGURATION_BUILD_DIR/HockeySDK/HockeySDKResources.bundle",
+				$PODS_CONFIGURATION_BUILD_DIR/HockeySDK/HockeySDKResources.bundle,
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -1454,7 +1540,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AE2022EC1FC2DFE100EE61A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE2022F41FC2DFE100EE61A7 /* IntentHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE2022F71FC2DFE100EE61A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE2022EF1FC2DFE100EE61A7 /* Intents Handler */;
+			targetProxy = AE2022F61FC2DFE100EE61A7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		43FD2EEE19BB8D87007E594D /* InfoPlist.strings */ = {
@@ -1665,9 +1767,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = NO;
+				CODE_SIGN_ENTITLEMENTS = Dash.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Bogdan Popescu (JB3QRP5DC5)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = JP58VMK957;
+				DEVELOPMENT_TEAM = G43P2FFDRZ;
 				ENABLE_BITCODE = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1678,13 +1781,13 @@
 				IBSC_NOTICES = NO;
 				IBSC_WARNINGS = NO;
 				INFOPLIST_FILE = "Dash-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kapeli.dash.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.osm.dashsiri;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
@@ -1699,9 +1802,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = NO;
+				CODE_SIGN_ENTITLEMENTS = Dash.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Bogdan Popescu (JB3QRP5DC5)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = JP58VMK957;
+				DEVELOPMENT_TEAM = G43P2FFDRZ;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dash-Prefix.pch";
@@ -1716,16 +1820,69 @@
 				IBSC_NOTICES = NO;
 				IBSC_WARNINGS = NO;
 				INFOPLIST_FILE = "Dash-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kapeli.dash.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.osm.dashsiri;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AE2022FA1FC2DFE100EE61A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bogdan Popescu (JB3QRP5DC5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = G43P2FFDRZ;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Intents Handler/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.osm.dashsiri.Intents-Handler";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE2022FB1FC2DFE100EE61A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bogdan Popescu (JB3QRP5DC5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = G43P2FFDRZ;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Intents Handler/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.osm.dashsiri.Intents-Handler";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -1755,6 +1912,15 @@
 			buildConfigurations = (
 				43FD2F1B19BB8D87007E594D /* Debug */,
 				43FD2F1C19BB8D87007E594D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE2022F91FC2DFE100EE61A7 /* Build configuration list for PBXNativeTarget "Intents Handler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE2022FA1FC2DFE100EE61A7 /* Debug */,
+				AE2022FB1FC2DFE100EE61A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

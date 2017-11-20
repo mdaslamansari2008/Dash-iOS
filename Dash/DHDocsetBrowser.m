@@ -25,7 +25,7 @@
 #import "DHDocsetDownloader.h"
 #import "DHRemoteBrowser.h"
 #import "DHWebView.h"
-
+#import <Intents/Intents.h>
 static NSAttributedString *_titleBarItemAttributedStringTemplate = nil;
 
 @implementation DHDocsetBrowser
@@ -46,6 +46,16 @@ static NSAttributedString *_titleBarItemAttributedStringTemplate = nil;
     self.navigationController.interactivePopGestureRecognizer.delegate = (id<UIGestureRecognizerDelegate>)self;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orientationChanged:) name:UIDeviceOrientationDidChangeNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(performURLSearch:) name:DHPerformURLSearch object:nil];
+    
+    [INPreferences requestSiriAuthorization:^(INSiriAuthorizationStatus status) {
+        NSLog(@"%ld",(long)status);
+    }];
+    
+    NSArray *workoutArray = [[NSArray alloc]initWithObjects:@"search",@"pull up",@"sit up", nil];
+     
+    [[INVocabulary sharedVocabulary] setVocabularyStrings:[NSOrderedSet orderedSetWithArray:workoutArray] ofType:INVocabularyStringTypeWorkoutActivityName];
+    
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated
